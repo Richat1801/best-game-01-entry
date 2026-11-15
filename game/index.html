@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumenkeep — Hold the Last Lighthouse</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #070a18; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  #wrap { width: min(1280px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #0b1026; cursor: pointer; }
+  #hint { color: #6c757d; font: 13px system-ui, sans-serif; text-align: center; padding: 8px 0 0; }
+  #hint b { color: #adb5bd; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="hint"><b>LUMENKEEP</b> — build towers on the glowing plots, hold the lighthouse through 12 waves. Mouse to build · 1–4 pick a tower · SPACE next wave · F speed · P pause · M mute</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
